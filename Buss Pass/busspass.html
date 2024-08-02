@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buss Pass</title>
+</head>
+<body>
+    <center>
+    <img src="./header-banner.jpeg">
+    <br><br>
+    <h2>STUDENT BUSS PASS APPLICATION UPTO SSC</h2><br></center>
+    <form action="./success.html" method="post">
+
+    <center><label for="regid">Registration ID</label>
+    <input type="number" name="regid" id="regid" required autocomplete="off" pattern="[1-9]+{8,8}" title="Please enter the details in formate of numbers max with 8 digits">
+    <input type="submit" value="submit"></center>
+    <fieldset>
+        <legend>1.Student Details</legend>
+
+        <label>1.1 Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="name" id="name" maxlength="20" required><br>
+
+        <label>1.2 Father_Name/Guardian's_name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="Father_Name" id="Father_Name" required><br>
+
+        <label>1.3 Date Of Birth: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="date" name="DOB" id="DOB" required><br>
+
+        <label>1.4 Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="Male" >
+        <input type="radio" name="Gender" id="Male" value="Male" required>Male
+        </label>
+        <label for="Female">
+        <input type="radio" name="Gender" id="Female" value="Female" required>Female
+        </label><br>
+
+        <label>1.5 Aadhar number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" name="Aadhar" id="Aadhar" pattern="[0-9]+{12}" title="Please match the formate"><br>
+
+        <label>1.6 Mobile No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" name="Mobile" id="Mobile" maxlength="10" required pattern="[0-9]+{10}" title="Please match the formate"><br>
+
+        <label>1.7  Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" id="email" required pattern="[a-z\d@.]" title="Please match the formate"><br>
+
+        <label>1.8 Photo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="file" name="Photo" id="Photo" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>2.Residential Address Details</legend>
+        <label>2.1 District: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="District" id="District">
+            <option value="Select">Select</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value="warangal">warangal</option>
+            <option value="adilabad">adilabad</option>
+        </select><br>
+        
+        <label>2.2 Mandal: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="Mandal" id="Mandal">
+            <option value="Select">Select</option>
+        <option value="adilabad">adilabad</option>
+        <option value="hyderabad">hyderabad</option>
+        <option value="warangal">warangal</option>
+    </select><br>
+        <label>2.3 Village: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="Mandal" id="Mandal">
+        <option value="Select">Select</option>
+        <option value="adilabad">adilabad</option>
+        <option value="hyderabad">hyderabad</option>
+        <option value="warangal">warangal</option>
+        </select><br>
+        <label>2.4 Address: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="Address" id="Address" maxlength="20" required><br>
+        <label>2.4 pincode: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="pincode" id="pincode" required>
+
+    </fieldset>
+    <fieldset>
+        <legend>3.School Details</legend>
+
+        <label>3.1 District: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="District" id="District">
+            <option value="Select">Select</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value="warangal">warangal</option>
+            <option value="adilabad">adilabad</option>
+        </select><br>
+        
+        <label>3.2 Mandal: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="Mandal" id="Mandal">
+            <option value="Select">Select</option>
+        <option value="adilabad">adilabad</option>
+        <option value="hyderabad">hyderabad</option>
+        <option value="warangal">warangal</option>
+    </select><br>
+
+    <label>3.3 School Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select name="Mandal" id="Mandal">
+            <option value="Select">Select</option>
+        <option value="Srichaitanya">Sri Chaitanya</option>
+        <option value="narayana">Narayana</option>
+        <option value="bashyam">Bashyam</option>
+    </select><br>
+    <label>Admission Number: &nbsp;&nbsp;&nbsp;</label>
+    <input name="Admission" id="Admission" required>
+
+    </fieldset>
+    
+        <center><input type="submit" value="submit"></center>
+
+        <Center><button><a href="./busspass.html" download="busspass APPLICATION">download</a></button></Center>
+    </form>  
+</body>
+</html>
